@@ -24,8 +24,35 @@ document.addEventListener( 'DOMContentLoaded', function () {
     const btn = document.querySelector('#start');
     // when button id pressed move aleatory to a slide
     btn.addEventListener('click', function() {
-        swiper.slideTo(Math.floor(Math.random() * 15), 1000, false);
-        // keep loop
+
         swiper.loop = true;
+
+        let slideCount = 0;
+        let interval = setInterval(() => {
+            swiper.slideTo(slideCount, 1000, false);
+            slideCount++;
+            if (slideCount === 15) {
+                slideCount = 0;
+            }
+        }, 100);
+
+        let random = Math.floor(Math.random() * 15);
+
+        setTimeout(() => {
+            clearInterval(interval);
+            slideCount = 0;
+
+
+            interval = setInterval(() => {
+                swiper.slideTo(slideCount, 1000, false);
+                if (slideCount === random) {
+                    clearInterval(interval);
+                }
+                slideCount++;
+            }, 100);
+        }, 6000);
+
+        console.log(random);
+        // keep loo
     });
 });
