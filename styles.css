@@ -77,7 +77,6 @@ canvas {
 #start {
     margin: 0;
     position: fixed;
-    border: 2px solid white;
     left: 50%;
     transform: translateX(-50%);
     bottom: 100px;
@@ -88,6 +87,7 @@ canvas {
     cursor: pointer;
     margin-top: 20px;
     padding: 20px 40px;
+    border: none;
 }
 
 #start:hover {
