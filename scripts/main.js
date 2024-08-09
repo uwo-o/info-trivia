@@ -1,3 +1,10 @@
+const show_question = () => {
+    bg = document.querySelector('.question-bg.active');
+    bg.appendChild(document.createElement('h1')).innerText = "¿Qué es el amor?";
+    // add class to h1
+    bg.querySelector('.question-bg.active.h1').classList.add('active');
+}
+
 document.addEventListener( 'DOMContentLoaded', function () {
     for (var i = 1; i <+ 15; i++) {
         var slide = document.createElement('div');
@@ -50,9 +57,16 @@ document.addEventListener( 'DOMContentLoaded', function () {
                 }
                 slideCount++;
             }, 100);
-        }, 6000);
 
-        console.log(random);
+            setTimeout(() => {
+                let bg = document.querySelector('.question-bg');
+                bg.classList.add('active');
+
+                show_question();
+
+            }, 1800);
+
+        }, 6000);
         // keep loo
     });
 });
