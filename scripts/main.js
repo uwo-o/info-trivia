@@ -18,13 +18,13 @@ const show_correct = (li, i, ul) => {
 }
 const show_question = () => {
     let bg = document.querySelector('.question-bg.active');
-    let random = Math.floor(Math.random() * 14);
     // load data/cards.json
     fetch('data/cards.json').then(response => {
         return response.json();
     }).then(data => {
-
-        let question = data.questions[random];
+        questionIndex = Math.floor(Math.random() * data.questions.length);
+        questionIndex = (questionIndex + 1) % data.questions.length;
+        let question = data.questions[questionIndex];
         bg.appendChild(document.createElement('h1')).innerText = question.question;
         let options = question.options;
         let ul = bg.appendChild(document.createElement('ul'));
