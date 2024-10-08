@@ -2,20 +2,323 @@
     "questions": [
         {
             "id": 1,
-            "question": "Pregunta test",
+            "question": "¿Cuál de estas alternativas no es un lenguaje de programación?",
             "answer": 1,
             "options": [
                 {
                     "id": 1,
-                    "text": "Opción 1"
+                    "text": "HTML"
                 },
                 {
                     "id": 2,
-                    "text": "Opción 2"
+                    "text": "Java"
                 },
                 {
                     "id": 3,
-                    "text": "Opción 3"
+                    "text": "C"
+                },
+                {
+                    "id": 4,
+                    "text": "Python"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "¿Cuál de estos no es un sistema operativo?",
+            "answer": 1,
+            "options": [
+                {
+                    "id": 1,
+                    "text": "Kindle"
+                },
+                {
+                    "id": 2,
+                    "text": "MAC OS X"
+                },
+                {
+                    "id": 3,
+                    "text": "Linux"
+                },
+                {
+                    "id": 4,
+                    "text": "Windows"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "¿Cuál de las siguientes alternativas no es un hardware?",
+            "answer": 3,
+            "options": [
+                {
+                    "id": 1,
+                    "text": "Disco duro"
+                },
+                {
+                    "id": 2,
+                    "text": "RAM"
+                },
+                {
+                    "id": 3,
+                    "text": "Windows"
+                },
+                {
+                    "id": 4,
+                    "text": "ROM"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "¿Cuál de las siguientes alternativas no es un software?",
+            "answer": 4,
+            "options": [
+                {
+                    "id": 1,
+                    "text": "Word"
+                },
+                {
+                    "id": 2,
+                    "text": "Photoshop"
+                },
+                {
+                    "id": 3,
+                    "text": "Skype"
+                },
+                {
+                    "id": 4,
+                    "text": "Mouse"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "¿Qué es un algoritmo?",
+            "answer": 1,
+            "options": [
+                {
+                    "id": 1,
+                    "text": "Conjunto ordenado de instrucciones definidas para una actividad"
+                },
+                {
+                    "id": 2,
+                    "text": "Dispositivo de almacenamiento de datos"
+                },
+                {
+                    "id": 3,
+                    "text": "Dispositivo que interpreta las instrucciones de un programa"
+                },
+                {
+                    "id": 4,
+                    "text": "Ninguna de las anteriores"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "¿Cómo se llama nuestra carrera?",
+            "answer": 2,
+            "options": [
+                {
+                    "id": 1,
+                    "text": "Ingeniería Informática"
+                },
+                {
+                    "id": 2,
+                    "text": "Ingeniería Civil Informática"
+                },
+                {
+                    "id": 3,
+                    "text": "Ingeniería Civil en Informática"
+                },
+                {
+                    "id": 4,
+                    "text": "Ingeniría Civil Telemática"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "¿Cuál no es una área de informática?",
+            "answer": 1,
+            "options": [
+                {
+                    "id": 1,
+                    "text": "Análisis Estructural"
+                },
+                {
+                    "id": 2,
+                    "text": "Seguridad"
+                },
+                {
+                    "id": 3,
+                    "text": "Programación"
+                },
+                {
+                    "id": 4,
+                    "text": "Optimización"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "¿Qué es hardware?",
+            "answer": 3,
+            "options": [
+                {
+                    "id": 1,
+                    "text": "Tarjeta donde se conectan los componentes del computador"
+                },
+                {
+                    "id": 2,
+                    "text": "Conjunto de componentes lógicos e intangibles"
+                },
+                {
+                    "id": 3,
+                    "text": "Conjunto de elementos físicos y tangibles"
+                },
+                {
+                    "id": 4,
+                    "text": "Ninguna de las anteriores"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "¿Qué es un bit?",
+            "answer": 1,
+            "options": [
+                {
+                    "id": 1,
+                    "text": "Digito del sistema de numeración binario"
+                },
+                {
+                    "id": 2,
+                    "text": "Conjunto de 8 bytes"
+                },
+                {
+                    "id": 3,
+                    "text": "Un lenguaje de programación"
+                },
+                {
+                    "id": 4,
+                    "text": "Una marca de computadores"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "¿Quien de ellos no está relacionado con la informática?",
+            "answer": 3,
+            "options": [
+                {
+                    "id": 1,
+                    "text": "Jeff Bezos"
+                },
+                {
+                    "id": 2,
+                    "text": "Alan Turing"
+                },
+                {
+                    "id": 3,
+                    "text": "Ada Lovelace"
+                },
+                {
+                    "id": 4,
+                    "text": "Katie Bouman"
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "question": "¿Qué es un sistema operativo?",
+            "answer": 2,
+            "options": [
+                {
+                    "id": 1,
+                    "text": "Conjunto de programas que permiten el funcionamiento del computador"
+                },
+                {
+                    "id": 2,
+                    "text": "Software que actúa como intermediario entre el usuario y el hardware"
+                },
+                {
+                    "id": 3,
+                    "text": "Conjunto de instrucciones que ejecuta el computador"
+                },
+                {
+                    "id": 4,
+                    "text": "Ninguna de las anteriores"
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "question": "¿Qué es un software?",
+            "answer": 1,
+            "options": [
+                {
+                    "id": 1,
+                    "text": "Conjunto de programas que permiten el funcionamiento del computador"
+                },
+                {
+                    "id": 2,
+                    "text": "Software que actúa como intermediario entre el usuario y el hardware"
+                },
+                {
+                    "id": 3,
+                    "text": "Conjunto de instrucciones que ejecuta el computador"
+                },
+                {
+                    "id": 4,
+                    "text": "Ninguna de las anteriores"
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "question": "¿Qué es un lenguaje de programación?",
+            "answer": 3,
+            "options": [
+                {
+                    "id": 1,
+                    "text": "Conjunto de programas que permiten el funcionamiento del computador"
+                },
+                {
+                    "id": 2,
+                    "text": "Software que actúa como intermediario entre el usuario y el hardware"
+                },
+                {
+                    "id": 3,
+                    "text": "Conjunto de instrucciones que ejecuta el computador"
+                },
+                {
+                    "id": 4,
+                    "text": "Ninguna de las anteriores"
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "question": "¿Qué es un compilador?",
+            "answer": 2,
+            "options": [
+                {
+                    "id": 1,
+                    "text": "Conjunto de programas que permiten el funcionamiento del computador"
+                },
+                {
+                    "id": 2,
+                    "text": "Software que traduce el código fuente a código máquina"
+                },
+                {
+                    "id": 3,
+                    "text": "Conjunto de instrucciones que ejecuta el computador"
+                },
+                {
+                    "id": 4,
+                    "text": "Ninguna de las anteriores"
                 }
             ]
         }

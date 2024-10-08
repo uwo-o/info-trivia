@@ -1,8 +1,44 @@
+const show_correct = (li, i, ul) => {
+    if ( li.classList.contains(i) ) {
+        li.classList.add('correct-answer');
+    }
+    else {
+        li.classList.add('incorrect-answer');
+    }
+
+    // add to ul other option with li that says next and reload the page if doesnt exist
+    if (ul.querySelector('.next') === null) {
+        let li = ul.appendChild(document.createElement('li'));
+        li.innerText = 'Siguiente';
+        li.classList.add('next');
+        li.addEventListener('click', function() {
+            location.reload();
+        });
+    }
+}
 const show_question = () => {
-    bg = document.querySelector('.question-bg.active');
-    bg.appendChild(document.createElement('h1')).innerText = "¿Qué es el amor?";
-    // add class to h1
-    bg.querySelector('.question-bg.active.h1').classList.add('active');
+    let bg = document.querySelector('.question-bg.active');
+    let random = Math.floor(Math.random() * 14);
+    // load data/cards.json
+    fetch('data/cards.json').then(response => {
+        return response.json();
+    }).then(data => {
+
+        let question = data.questions[random];
+        bg.appendChild(document.createElement('h1')).innerText = question.question;
+        let options = question.options;
+        let ul = bg.appendChild(document.createElement('ul'));
+        ul.classList.add('options');
+        for (let i = 0; i < 4; i++) {
+            let li = ul.appendChild(document.createElement('li'));
+            li.innerText = options[i].text;
+            li.classList.add(question.answer);
+            li.addEventListener('click', function() {
+                show_correct(li, i+1, ul);
+
+            });
+        }
+    });
 }
 
 document.addEventListener( 'DOMContentLoaded', function () {
